@@ -6,9 +6,9 @@ describe("Likes", () => {
     const repository = await request(app)
       .post("/repositories")
       .send({
-        url: "https://github.com/Rocketseat/umbriel",
-        title: "Umbriel",
-        techs: ["Node", "Express", "TypeScript"]
+        title: "Mobile em React Native",
+        description: "Um aplicativo para listagem de projetos em React Native",
+        owner: "Diego Fernandes"
       });
 
     let response = await request(app).post(
